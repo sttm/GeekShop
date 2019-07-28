@@ -2,18 +2,9 @@
 {% load static %}
 {% block container %}
     <div class="hero-white">
-    <div class="header clearfix">
-        <a href="/" class="logo" style="background-image: url({% static 'img/geekbr_logo.png' %})"></a>
-        <ul class="menu">
-            <li><a href="/">домой</a></li>
-            <li><a href="/products" class="active">продукты</a></li>
-            <li><a href="/contact">контакты</a></li>
-
-        </ul>
-<!--        <a href="#" class="search"></a>-->
-<!--        <a href="#" class="basket"></a>-->
+        <a href="{% url 'main:products' %}" class="logo" style="background-image: url({% static 'img/geekbr_logo.png' %})"></a>
+        {% include 'mainapp/includes/inc__main_menu.html' %}
     </div>
-</div>
 
     <div class="details">
     <div class="links clearfix">

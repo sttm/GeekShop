@@ -3,13 +3,8 @@
 {% block container %}
     <div class="slider" style="background-image: url({% static 'img/slider_gb_bw.png' %})">
     <div class="header clearfix">
-        <a href="/" class="logo" style="background-image: url({% static 'img/geekbr_logo.png' %})"></a>
-        <ul class="menu">
-            <li><a href="/" class="active">домой</a></li>
-            <li><a href="/products">продукты</a></li>
-            <li><a href="/contact">контакты</a></li>
-        </ul>
-        <!-- <a href="#" class="search"></a> -->
+        <a href="{% url 'main:index' %}" class="logo" style="background-image: url({% static 'img/geekbr_logo.png' %})"></a>
+        {% include 'mainapp/includes/inc__main_menu.html' %}
     </div>
     <div class="text-slider">
         <h3 class="greyed">проблема</h3>
