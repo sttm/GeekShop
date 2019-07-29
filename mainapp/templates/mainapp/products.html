@@ -1,19 +1,10 @@
 {% extends 'mainapp/base.html' %}
-
+{% load static %}
 {% block container %}
-    <div class="hero-w hite">
-    <div class="header clearfix">
-        <a href="/" class="logo"></a>
-        <ul class="menu">
-            <li><a href="/">домой</a></li>
-            <li><a href="/products" class="active">продукты</a></li>
-            <li><a href="/contact">контакты</a></li>
-
-        </ul>
-        <a href="#" class="search"></a>
-        <a href="#" class="basket"></a>
+    <div class="hero-white">
+        <a href="{% url 'main:products' %}" class="logo" style="background-image: url({% static 'img/geekbr_logo.png' %})"></a>
+        {% include 'mainapp/includes/inc__main_menu.html' %}
     </div>
-</div>
 
     <div class="details">
     <div class="links clearfix">
@@ -29,21 +20,21 @@
     <div class="details-products">
         <div class="details-slider">
             <div class="slider-product">
-                <img src="/static/img/slider1.jpg">
+                <img src="{% static 'img/slider1.jpg' %}">
             </div>
             <div class="slider-control">
                 <div class="block">
-                    <a href="#"><img src="/static/img/controll.jpg" alt="">
+                    <a href="#"><img src="{% static 'img/controll.jpg' %}" alt="">
                         <div class="text"></div>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="#"><img src="/static/img/controll1.jpg" alt="">
+                    <a href="#"><img src="{% static 'img/controll1.jpg' %}" alt="">
                         <div class="text"></div>
                     </a>
                 </div>
                 <div class="block">
-                    <a href="#"><img src="/static/img/controll2.jpg" alt="">
+                    <a href="#"><img src="{% static 'img/controll2.jpg' %}" alt="">
                         <div class="text"></div>
                     </a>
                 </div>
@@ -71,31 +62,31 @@
     <div class="related">
         <div class="title clearfix">
             <h2>Похожие продукты</h2>
-            <a class="explore" href="#">показать все <img src="/static/img/arrow.png" alt=""></a>
+            <a class="explore" href="#">показать все <img src="{% static 'img/arrow.png' %}" alt=""></a>
         </div>
         <div class="related-products clearfix">
             <div class="block">
-                <a href="#"><img src="/static/img/product-11.jpg" alt="">
+                <a href="#"><img src="{% static 'img/product-11.jpg' %}" alt="">
                     <div class="text">
-                        <img src="/static/img/icon-hover.png" alt="img">
+                        <img src="{% static 'img/icon-hover.png' %}" alt="img">
                         <h4>Стул повышенного качества</h4>
                         <p>Не оторваться. </p>
                     </div>
                 </a>
             </div>
             <div class="block">
-                <a href="#"><img src="/static/img/product-21.jpg" alt="">
+                <a href="#"><img src="{% static 'img/product-21.jpg' %}" alt="">
                     <div class="text">
-                        <img src="/static/img/icon-hover.png" alt="img">
+                        <img src="{% static 'img/icon-hover.png' %}" alt="img">
                         <h4>Стул повышенного качества</h4>
                         <p>Не оторваться. </p>
                     </div>
                 </a>
             </div>
             <div class="block">
-                <a href="#"><img src="/static/img/product-31.jpg" alt="">
+                <a href="#"><img src="{% static 'img/product-31.jpg' %}" alt="">
                     <div class="text">
-                        <img src="/static/img/icon-hover.png" alt="img">
+                        <img src="{% static 'img/icon-hover.png' %}" alt="img">
                         <h4>Стул повышенного качества</h4>
                         <p>Не оторваться. </p>
                     </div>

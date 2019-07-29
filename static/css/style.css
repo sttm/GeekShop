@@ -24,14 +24,14 @@ html, body {
 
 .slider {
 	height: 800px;
-	background-image: url(/static/img/slider_gb_bw.png); 
+	/* background-image: url(/static/img/slider_gb_bw.png);  */
 	padding-left: 98px;
 	padding-right: 211px;
 	position: relative;
 }
 
 .logo {
-	background-image: url(/static/img/geekbr_logo.png);
+	/* background-image: url(/static/img/geekbr_logo.png); */
 	background-repeat: no-repeat;
 	margin-top: 40px;
 	background-size: 180px 50px;

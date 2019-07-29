@@ -1,2 +1,2 @@
-# geekshop
-Homework for IT University
+# Geekshop
+Homework for IT University GeekBrains
